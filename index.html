@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/tab.png">
+    <link rel="stylesheet" href="style.css">
+    <title>pig game</title>
+</head>
+<body>
+    
+    <section class="players">
+
+        <div class="newGame" onclick="restart()">
+            <img src="./images/newgame.png" alt="image"/>
+            New Game</div>
+        <div class="rollDice" id="rollDice" onclick="rollDice()">
+            <img src="./images/dice.png" alt="dice"/>
+            Roll Dice</div>
+        <div class="hold" id="hold" onclick="holdHandler()">
+            <img src="./images/hold.png" alt="hold">
+            Hold</div>
+
+        <div class="dice" id="dice">
+            
+        </div>
+
+        <section class="player1">
+          
+            <div class="playerScore">
+               
+                <h1 class="player-1" id="player1">PLAYER 1
+                    
+                </h1>
+
+                <span style="width: 20px;" id="currentPlayer1" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                      </svg>
+                </span>
+
+                <!-- <span id="currentPlayer1" class=""> . </span> -->
+
+                <h1 class="score1" id="score1">0</h1>
+            </div>
+            <div class="currentBox">
+                <h4>current</h4>
+                <h4 id="currentScore1">0</h4>
+            </div>
+        </section>
+       
+        <section class="player2">
+            <div class="playerScore">
+                <h1 class="player-2" id="player2">PLAYER 2
+                    
+                </h1>
+
+                <span style="width: 20px;" id="currentPlayer2" class="hide">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                      </svg>
+                </span>
+                
+                <h1 class="score2" id="score2">0</h1>
+            </div>
+            <div class="currentBox">
+                <h4>current</h4>
+                <h4 id="currentScore2">0</h4>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

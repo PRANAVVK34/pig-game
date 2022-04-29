@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.players{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.newGame,
+.rollDice,
+.hold,
+.dice
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+.dice{
+    top: 45%;
+    font-size: 4em;
+    color: white;
+}
+
+.newGame{
+    top: 5%;
+    cursor: pointer;
+    
+}
+
+.rollDice{
+    bottom: 30%;
+    cursor: pointer;
+}
+
+.hold{
+    bottom: 25%;
+    cursor: pointer;
+}
+
+.player1{
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+    opacity: .9;
+}
+
+.player2{
+    width: 50%;
+    background-color: green;
+    opacity: .9;
+}
+
+.playerScore
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15%;
+}
+
+#currentPlayer1,
+#currentPlayer2
+{
+    color: red;
+    font-size: 1.5em;
+}
+
+.hide{
+    opacity: 0;
+}
+
+
+.currentBox{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.player1,
+.player2{
+    font-size: 1.6em;
+}
+
+.score1,
+.score2{
+    font-size: 3em;
+}
+
+img{
+    width: 12px;
+}
